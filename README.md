@@ -21,3 +21,4 @@ i want to dive a bit into machine learning and i've decided to go with python si
 3. Accepting user inputs
 4. type casting
 5. ternary statements
+6. Funtions

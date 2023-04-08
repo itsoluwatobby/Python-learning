@@ -19,13 +19,24 @@ names = ['Dave', 'Sara', 'John']
 # for x in range(len(names)):
 #    print(names[x])
 
-for x in range(2, len(names)):
-  print(names[x])
-else:
-  print("That's over")
+# for x in range(2, len(names)):
+#   print(names[x])
+# else:
+#   print("That's over")
 
-names = ['Dave', 'Aaron', 'James', 'Luke']
+names = ['Dave', 'Aaron', 'James']
 actions = ['codes', 'eats', 'sleeps']
+
+# for name in names:
+#   for action in actions:
+#     print(name + ' ' + action + '.')
+
+for action in actions:
+  for name in names:
+    print(name + ' ' + action + '.')
+
+
+
 
 
 
