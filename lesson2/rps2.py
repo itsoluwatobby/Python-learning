@@ -43,8 +43,7 @@ def play_rps():
     print("\nPlay again \nY for Yes\nQ to Quit\n")
 
     while True:
-        playAgain = input("Response: ")
-        
+        playAgain = input("Response: ")      
         if playAgain.lower() not in ['y', 'q']:
             continue
         else:
