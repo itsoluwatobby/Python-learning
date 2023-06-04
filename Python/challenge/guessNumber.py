@@ -6,7 +6,6 @@ def guessMyNumber(name: str='PlayerOne'):
   gameCount = 0
   playerWins = 0
 
-
   def startGame():
     nonlocal name
     nonlocal gameCount
@@ -32,11 +31,18 @@ def guessMyNumber(name: str='PlayerOne'):
     
     gameCount += 1
 
-    if playerGuess == int(computerNums):
-      playerWins += 1
-      print(f"🥳, {name}, you win\n")
-    else:
-      print(f"Sorry, {name}. Better luck next time. 😭\n")
+    def decide_winner(playerGuess, computerNums):
+      nonlocal playerWins
+      nonlocal name
+
+      if playerGuess == int(computerNums):
+        playerWins += 1
+        return f"🥳, {name}, you win\n"
+      else:
+        return f"Sorry, {name}. Better luck next time. 😭\n"
+
+    get_winner = decide_winner(playerGuess, computerNums)
+    print(get_winner)
 
     print(f"Game count: {gameCount}\n")
     print(f"{name}'s wins {playerWins}\n")
@@ -64,21 +70,17 @@ def guessMyNumber(name: str='PlayerOne'):
         
   return startGame
 
+if __name__ == '__main__':
+    import argparse
 
-# game = guessMyNumber()
-# game()
+    parser = argparse.ArgumentParser(
+        description = "The is a game where you guess a random number choosen by computer"
+    )
+    parser.add_argument(
+        '-n', '--name', metavar='name', required=True,
+        help="The Guessing game"
+    )
+    args = parser.parse_args()
 
-# if __name__ == '__main__':
-#     import argparse
-
-#     parser = argparse.ArgumentParser(
-#         description = "The is a game where you guess a random number choosen by computer"
-#     )
-#     parser.add_argument(
-#         '-n', '--name', metavar='name', required=True,
-#         help="The Guessing game"
-#     )
-#     args = parser.parse_args()
-
-#     game = guessMyNumber(args.name)
-#     game()
+    game = guessMyNumber(args.name)
+    game()

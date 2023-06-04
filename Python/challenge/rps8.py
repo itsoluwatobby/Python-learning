@@ -79,24 +79,20 @@ def rps(name: str = 'PlayerOne'):
     
   return play_rps
 
-# if __name__ == "__main__":
-#   import argparse
+if __name__ == "__main__":
+  import argparse
 
-#   parser = argparse.ArgumentParser(
-#       description = "Provides a personal game experience.",
-#   )
-#   parser.add_argument(
-#     "-n", "--name", metavar="name", required=True,
-#     help="The name of the person playing the game"
-#   )
+  parser = argparse.ArgumentParser(
+      description = "Provides a personal game experience.",
+  )
+  parser.add_argument(
+    "-n", "--name", metavar="name", required=True,
+    help="The name of the person playing the game"
+  )
 
-#   args = parser.parse_args()
+  args = parser.parse_args()
 
-#   rock_paper_scissors = rps(args.name)
-#   rock_paper_scissors()
-
-
-
-
+  rock_paper_scissors = rps(args.name)
+  rock_paper_scissors()
 
 
