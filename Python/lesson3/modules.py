@@ -31,4 +31,4 @@ from rps7 import rock_paper_scissors
 # print(kansas.flower)
 # kansas.randomFunFact()
 # print(kansas.__name__)
-rock_paper_scissors()
+# rock_paper_scissors()
