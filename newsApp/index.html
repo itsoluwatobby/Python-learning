@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Oluwatobi Akinola">
+  <meta name="description" content="a simple web page to read latest news">
+  <title>News App</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <main class="main-app">
+    <nav class="navbar">
+      <h2>News Portal</h2>
+      <div class="nav-buttons" id="navButton">
+        <button class="button_sign">Sign in</button>
+        <button class="button_signup">sign up</button>
+      </div>
+    </nav>
+  <!-------------------- HEADER SECT ---------------------->
+    <header class="header_section">
+      <p class="burger">
+        <span class="burger-menu"></span>
+        <span class="burger-menu"></span>
+        <span class="burger-menu"></span>
+      </p>
+      <div class="header_flex" id="header"></div>
+      <button class="subscribe">
+        Subscribe
+      </button>
+    </header>
+  <!--------------------- MAIN SECTION -------------------->
+    <div class="main-page">
+      <article class="hot-block">
+        <div class="image-block"></div>
+        <div class="bottom">
+          <div class="author">
+            <div class="profile-picture"></div>
+            <p>author</p>
+          </div>
+          <div class="reactions">
+            <span class="fas fa-heart"></span>
+            <span class="fas fa-eye"></span>
+            <span class="count heart">5</span>
+            <span class="count eye">0</span>
+          </div>
+        </div>
+      </article>
+      
+      
+    </div>
+  <!------------------- BLOG SECTION ----------------------->
+    <section>
+
+    </section>
+    <footer class="base">
+      <h5>News Portal</h5>
+      <div class="link-base">
+        <p class="copyright">2023 20WebAppChallenge | All Rights Reserved</p>
+        <p class="links">
+          <a href="https://twitter.com/itsoluwatobby" target="_blank"><span class="fab fa-twitter"></span></a>
+<a href="https://www.facebook.com/yourusername" target="_blank"><span class="fab fa-facebook"></span></a>
+<a href="https://github.com/itsoluwatobby" target="_blank"><span class="fab fa-github"></span></a>
+<a href="https://www.linkedin.com/in/itsoluwatobby" target="_blank"><span class="fab fa-linkedin"></span></a>
+
+        </p>
+      </div>
+    </footer>
+    <div id="siginbox">
+      <form>
+        <h2>Sign In</h2>
+        <label for="email">
+          <p>Email:</p>
+          <input 
+            type="text" name="email"
+            id="email"
+            placeholder="iamuser@gmail.com"
+          >
+        </label>
+        <label for="password">
+          <p>Password:</p>
+          <input 
+            type="password" name="password"
+            id="password"
+            placeholder="***************"
+          >
+        </label>
+        <button id="closeBtn">
+          Sign In
+        </button>
+      </form>
+    </div>
+    <div id="sigupbox">
+      <form>
+        <h2>Sign Up</h2>
+        <label for="email2">
+          <p>Email:</p>
+          <input 
+            type="text" name="email"
+            id="email2"
+            placeholder="iamuser@gmail.com"
+          >
+        </label>
+        <label for="password2">
+          <p>Password:</p>
+          <input 
+            type="password" name="password"
+            id="password2"
+            placeholder="***************"
+          >
+        </label>
+        <button id="closeBtn2">
+          Sign Up
+        </button>
+      </form>
+    </div>
+    <div class="search-box">
+      <input 
+            type="text" name="search"
+            id="search"
+            placeholder="your search"
+          >
+    </div>
+  </main>
+</body>
+</html>
