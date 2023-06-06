@@ -17,8 +17,7 @@ def gameChoice(name='PlayerOne'):
         print(f"\n{name}, welcome to the Arcade! 🐍")
       
       print("\nPlease choose a game to play: ")
-      print("1 = Rock Paper Scissors")
-      print("2 = Guess My Number\n")
+      print("1 = Rock Paper Scissors \n2 = Guess My Number\n")
 
       print("Or press \"x\" to exit the Arcade\n")
 
